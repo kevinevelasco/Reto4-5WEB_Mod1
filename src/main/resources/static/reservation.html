@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script><!--habilita jQuery-->
+  <script src="reservation.js"></script><!--relacion con javascript-->
+  <link rel="stylesheet" href="reservation.css"><!--relacion con css-->
+    <title>Reservation</title>
+</head>
+<body>
+  <div class="Regresar">
+    <ul>
+      <li>
+        <a href="index.html">Volver</a>
+      </li>
+    </ul>
+  </div>
+    <div class="lista">
+        <h1>Reservaciones</h1>
+  <!-- Botón para obtener todos los carros -->
+        <button onclick="getAllReservation()">Obtener Reservaciones</button>
+    </div>
+    <div class="formulario">
+  <!-- Formulario para guardar un nuevo carro -->
+    <form id="reservation-form" onsubmit="saveReservationForm(event)">
+        <label for="startDate">fecha de inicio:</label>
+        <input type="date" id="startDate" name="startDate" required>
+
+        <label for="devolutionDate">fecha de devolucion:</label>
+        <input type="date" id="devolutionDate" name="devolutionDate" required>
+
+        <button type="submit">Guardar</button>
+    </form>
+    <div id="reservation-list"></div><!--muestra la lista de carros al pulsar el boton-->
+
+    </div>
+</body>
+</html>

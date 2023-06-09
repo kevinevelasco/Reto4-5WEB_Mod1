@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script><!--habilita jQuery-->
+  <script src="client.js"></script><!--relacion con javascript-->
+  <link rel="stylesheet" href="client.css"><!--relacion con css-->
+    <title>Client</title>
+</head>
+<body>
+  <div class="Regresar">
+    <ul>
+      <li>
+        <a href="index.html">Volver</a>
+      </li>
+    </ul>
+  </div>
+    <div class="lista">
+        <h1>Clientes</h1>
+  <!-- Botón para obtener todos los carros -->
+        <button onclick="getAllClients()">Obtener Clientes</button>
+    </div>
+    <div class="formulario">
+  <!-- Formulario para guardar un nuevo carro -->
+    <form id="client-form" onsubmit="saveClientForm(event)">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="password">contraseña:</label>
+        <input type="text" id="password" name="password" required>
+
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="age">Edad:</label>
+        <input type="number" id="age" name="age" required>
+
+        <button type="submit">Guardar</button>
+    </form>
+    <div id="client-list"></div><!--muestra la lista de carros al pulsar el boton-->
+
+    </div>
+</body>
+</html>

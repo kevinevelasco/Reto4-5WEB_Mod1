@@ -1,0 +1,37 @@
+*{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-family: cursive;
+    box-sizing: content-box;
+}
+
+
+.lista{
+    text-align:center;
+
+}
+
+table thead {
+    /* es para la creacion de la tabla de datos */
+        background:darkorchid;
+        color:white;
+        /* color de las letras de la cabecera */
+        width: 100%;
+    }
+    td{
+        background-color:darkolivegreen;
+        width: 500px;
+    }
+    form{
+        margin: 20px;
+        padding: 20px;
+        background-color:cornflowerblue;
+  
+ 
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    body{
+        background-color:cadetblue;
+    }
+    

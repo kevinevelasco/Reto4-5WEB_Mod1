@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script><!--habilita jQuery-->
+  <script src="car.js"></script><!--relacion con javascript-->
+  <link rel="stylesheet" href="car.css"><!--relacion con css-->
+    <title>Cars</title>
+</head>
+<body>
+  <div class="Regresar">
+    <ul>
+      <li>
+        <a href="index.html">Volver</a>
+      </li>
+    </ul>
+  </div>
+    <div class="lista">
+        <h1>Automoviles</h1>
+  <!-- Botón para obtener todos los carros -->
+        <button onclick="getAllCars()">Obtener carros</button>
+    </div>
+    <div class="formulario">
+  <!-- Formulario para guardar un nuevo carro -->
+    <form id="car-form" onsubmit="saveCarForm(event)">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="brand">Marca:</label>
+        <input type="text" id="brand" name="brand" required>
+
+        <label for="year">Año:</label>
+        <input type="number" id="year" name="year" required>
+
+        <label for="description">Descripción:</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <button type="submit">Guardar</button>
+    </form>
+    <div id="car-list"></div><!--muestra la lista de carros al pulsar el boton-->
+
+    </div>
+</body>
+</html>
